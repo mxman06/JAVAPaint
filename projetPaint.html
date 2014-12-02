@@ -1,0 +1,54 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>JAVA Project - MyPaint</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../css/reset.css"/> 
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/fancybox.css"/>
+</head>
+ 
+<body>
+ <h3 class="main-heading"><span>Project MyPaint</span></h3>  
+ 
+  <ul class="timeline">
+    <li>                                               
+        <div class="timelineUnit">
+            <h4>Master degree MIAGE<span class="timelineDate">2014</span></h4>
+            <h5>Java Application</h5><br /><br />
+            <p>
+			<h5>Advanced Programming</h5><br />
+			This 3 students JAVA project is the final project into we put what we learned during the course.
+			Specifically, we learned how to manage plugins in a JAVA Application and hot-plugs.<br />
+			This project is basically a paint application, providing the possibility to create/modify/delete some shapes.
+			Theses shapes are plugins, which are load at the beginning. <br /><br />
+			
+			<h5>Conception Pattern</h5><br /><br />
+			We had to develop this application by using some patterns that we learned which are th following:Adaptator, Composite, Decorator
+			Usine, Singleton, Visitor, Listener, Memento.<br/>
+			We chose the patern Memento for the serialization of our shapes into the panel. With this one, we can save every state of our shape.
+			For example after changiond the color, we can come back easily to the previous state. <br />
+			We chose to apply the listener pattern to manage the mouse into our drawing panel in term of
+			creating, saving, loading, changing mode (edit/select) and undoing.<br />
+			The pattern Adaptator has been performed to manage the dynamic loading of plugins : we ginving to the adaptator a classes list
+			and it returns back the list of button which will be display on the top of the frame. That allows to develop another way to get back
+			the classes (for example, by requesting a database, by the network...) without changing the actual implementation.<br />
+			The Visitor pattern has been performed in order to display as text, all the informations of the current shape. This implementation 
+			let the possibility to develop another features, operations, which should be implemented in the visitor.<br />
+			
+					</span>
+			</p>
+        </div>
+        <br /><br /><br /><br />
+<p align="center"> 1) Click on the link to download the file <br />
+					2) Unzip <br />
+					3) Execute .jar file  named "MyPaint.jar" in the repertory  "MyPaintPlugins"<br />
+					
+					<br/><br/>
+					<a href="./paint_JAR.zip" title="Zip file" > >> Here the link << </a>
+					</p>
+ 
+</body>
+</html>
